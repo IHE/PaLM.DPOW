@@ -1,0 +1,112 @@
+# sushi-config.yaml is documented https://fshschool.org/docs/sushi/configuration/
+# ---------------------------------------------------
+# DPOW is an HL7 v2.5.1 messaging profile. This IG is authored as a
+# narrative-only IHE supplement using the IHE FHIR IG Publisher template.
+# There are no FHIR conformance resources (no StructureDefinitions or
+# CapabilityStatements) because the profile's conformance is expressed in
+# HL7 v2 message and segment tables in the narrative pages (Volume 2 and
+# its appendix). See README.md for the rationale.
+id: ihe.palm.dpow
+canonical: https://profiles.ihe.net/PaLM/DPOW
+version: 0.0.1-current
+name: IHE_PaLM_DPOW
+title: "Digital Pathology Ordering & Workflow (DPOW)"
+description: DPOW empowers the systems in the digital pathology ecosystem with the data needed to drive the reading and ordering workflow, using HL7 v2.5.1 messaging for physical-asset registration, case synchronisation, work orders, and image-availability notification.
+releaseLabel: ci-build
+#releaseLabel: ballot
+#releaseLabel: trial-use
+#releaseLabel: release
+status: draft
+publisher:
+  - name: IHE Pathology and Laboratory Medicine Technical Committee
+  - url: https://www.ihe.net/ihe_domains/pathology_and_laboratory_medicine/
+  - email: PaLM@ihe.net
+contact:
+  - name: IHE Pathology and Laboratory Medicine Technical Committee
+    telecom:
+      - system: email
+        value: PaLM@ihe.net
+license: CC-BY-4.0
+fhirVersion: 4.0.1
+jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
+#copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
+copyrightYear: 2026+
+
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+    - input/examples
+  show-inherited-invariants: 'false'
+  usage-stats-opt-out: 'false'
+  logging: progress
+  shownav: 'true'
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+
+pages:
+# The order here is the order pages appear in the TOC and next/prev navigation.
+# Section numbers follow IHE convention: Volume 1 = 1:XX.n, Volume 2 = 2:3.LAB-1NN.n.
+# XX is a placeholder assigned by IHE at transaction/profile registration (see Open Issue 6).
+  index.md:
+    title: Home
+    generation: markdown
+  volume-1.md:
+    title: 1:XX DPOW Profile (Volume 1)
+    generation: markdown
+  LAB-100.md:
+    title: "2:3.LAB-100 Physical Asset Registration [LAB-100]"
+    generation: markdown
+  LAB-101.md:
+    title: "2:3.LAB-101 Case Update [LAB-101]"
+    generation: markdown
+  LAB-102.md:
+    title: "2:3.LAB-102 Place Work Order [LAB-102]"
+    generation: markdown
+  LAB-103.md:
+    title: "2:3.LAB-103 Accept Work Order [LAB-103]"
+    generation: markdown
+  LAB-104.md:
+    title: "2:3.LAB-104 Image Availability Notification [LAB-104]"
+    generation: markdown
+  volume-2-appendix.md:
+    title: "2:Appendices Volume 2 Appendices (HL7 Segments, Message Templates)"
+    generation: markdown
+  other.md:
+    title: Changes to Other IHE Specifications
+    generation: markdown
+  download.md:
+    title: "Download and Analysis"
+    generation: markdown
+  testplan.md:
+    title: "Test Plan"
+    generation: markdown
+  issues.md:
+    title: Significant Changes and Issues
+    generation: markdown
+
+menu:
+  Home: index.html
+  Volume 1:
+    Introduction: volume-1.html
+    Actors and Transactions: volume-1.html#actors-and-transactions
+    Actor Options: volume-1.html#actor-options
+    Required Actor Groupings: volume-1.html#required-groupings
+    Overview: volume-1.html#overview
+    Security Considerations: volume-1.html#security-considerations
+    Cross-Profile Considerations: volume-1.html#other-grouping
+  Volume 2:
+    "Physical Asset Registration [LAB-100]": LAB-100.html
+    "Case Update [LAB-101]": LAB-101.html
+    "Place Work Order [LAB-102]": LAB-102.html
+    "Accept Work Order [LAB-103]": LAB-103.html
+    "Image Availability Notification [LAB-104]": LAB-104.html
+    "Volume 2 Appendices": volume-2-appendix.html
+  Artifacts: artifacts.html
+  Other:
+    Changes to Other IHE Specifications: other.html
+    Download and Analysis: download.html
+    Test Plan: testplan.html

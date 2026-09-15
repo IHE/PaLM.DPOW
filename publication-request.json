@@ -1,0 +1,13 @@
+{
+    "package-id" : "ihe.palm.dpow",
+    "version" : "1.0.0",
+    "path" : "https://profiles.ihe.net/PaLM/DPOW/1.0.0",
+    "mode" : "milestone",
+    "status" : "release",
+    "sequence" : "Public Comment",
+    "desc" : "Digital Pathology Ordering & Workflow (DPOW) - Draft for Public Comment",
+    "title" : "Digital Pathology Ordering & Workflow (DPOW)",
+    "ci-build" : "https://build.fhir.org/ig/IHE/PaLM.DPOW",
+    "category" : "Pathology and Laboratory Medicine",
+    "introduction" : "DPOW empowers the systems in the digital pathology ecosystem with the data needed to drive the reading and ordering workflow, using HL7 v2.5.1 messaging."
+}
