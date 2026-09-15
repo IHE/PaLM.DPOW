@@ -1,7 +1,7 @@
 # PaLM.DPOW
 
 This GitHub repository is the source content for the IHE PaLM Technical Framework
-Supplement **Digital Pathology Ordering & Workflow (DPOW)**, Revision 1.1 -
+Supplement **Digital Pathology Ordering & Workflow (DPOW)**, Revision 0.1 -
 *Draft for Public Comment*, authored with the
 [IHE supplement-template](https://github.com/IHE/supplement-template) (FHIR IG
 Publisher).
@@ -11,14 +11,9 @@ to drive the reading and ordering workflow, using HL7 v2.5.1 messaging for
 physical-asset registration, case synchronisation, work orders, and
 image-availability notification.
 
-## Authoring source
-
-The pages in `input/pagecontent/` are derived from the single-file authoring
-source `IHE_PaLM_Suppl_DPOW_Rev1.1_Draft.md`, maintained in the separate DPOW
-authoring package (not part of this repository). That Markdown file remains the
-source of truth for prose; this repository re-homes its content into the
-template's page structure, section numbering, and conventions. Edit the
-authoring source first, then port changes here - not the other way round.
+This repository is the authoritative source for the supplement: the pages under
+`input/pagecontent/` are edited directly here, and the published guide is
+rendered from them by the IG Publisher.
 
 ## HL7 v2 vs FHIR - important
 

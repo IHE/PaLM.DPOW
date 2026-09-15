@@ -8,7 +8,7 @@
 # its appendix). See README.md for the rationale.
 id: ihe.palm.dpow
 canonical: https://profiles.ihe.net/PaLM/DPOW
-version: 0.0.1-current
+version: 0.1.0-current
 name: IHE_PaLM_DPOW
 title: "Digital Pathology Ordering & Workflow (DPOW)"
 description: DPOW empowers the systems in the digital pathology ecosystem with the data needed to drive the reading and ordering workflow, using HL7 v2.5.1 messaging for physical-asset registration, case synchronisation, work orders, and image-availability notification.
