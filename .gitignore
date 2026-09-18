@@ -1,0 +1,22 @@
+# IG Publisher / SUSHI build output
+fsh-generated/
+output/
+input-cache/
+template/
+temp/
+tx-cache/
+www
+website
+*.log
+
+# Publisher convenience scripts (fetched by _updatePublisher)
+/_genonce.sh
+/_genonce.bat
+/_gencontinuous.sh
+/_gencontinuous.bat
+
+# Editor / OS cruft
+input/images/Thumbs.db
+
+# Local convenience redirect into the gitignored output/
+"Start HERE!.html"
